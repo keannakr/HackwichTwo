@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Segue Push"/>
                                 <connections>
-                                    <segue destination="CKD-vL-Z1y" kind="show" id="zIa-Ug-cYg"/>
+                                    <segue destination="ngf-ky-iyA" kind="show" id="U2c-Xx-LKS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,16 +46,24 @@
             </objects>
             <point key="canvasLocation" x="-76.811594202898561" y="133.69565217391306"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Y0r-6j-d6y">
+        <!--Second View Controller-->
+        <scene sceneID="hxq-gw-bAq">
             <objects>
-                <viewController id="CKD-vL-Z1y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dFq-4v-IgG">
+                <viewController id="ngf-ky-iyA" customClass="SecondViewController" customModule="HackwichTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92a-tG-Vlk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-4V-Pq1">
-                                <rect key="frame" x="186" y="133" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-7K-588">
+                                <rect key="frame" x="160" y="309" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColorButtonPressed:" destination="ngf-ky-iyA" eventType="touchUpInside" id="2LK-SR-N60"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f39-6a-Udn">
+                                <rect key="frame" x="169" y="99" width="76" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -63,12 +71,15 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="P3D-PO-0qO"/>
+                        <viewLayoutGuide key="safeArea" id="RAk-Qs-3bg"/>
                     </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="f39-6a-Udn" id="FvO-4Z-IGC"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3V8-Ad-Xf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgr-UT-H7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="134"/>
+            <point key="canvasLocation" x="631.8840579710145" y="21.195652173913047"/>
         </scene>
     </scenes>
 </document>
